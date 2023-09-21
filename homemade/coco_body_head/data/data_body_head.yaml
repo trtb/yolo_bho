@@ -1,0 +1,20 @@
+# COCO 2017 dataset http://cocodataset.org
+
+# download command/URL (optional)
+# download: bash ./scripts/get_coco.sh
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: ./homemade/coco_body_head/labels/train2017/summary.txt
+val: ./homemade/coco_body_head/labels/val2017/summary.txt
+test: ./coco/test-dev2017.txt  # 20288 of 40670 images, submit to https://competitions.codalab.org/competitions/20794
+
+# number of classes
+nc: 51
+
+# class names
+names: ['person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus', 'bench', 'bird', 'cat', 'dog', 'horse', 
+        'sheep', 'backpack', 'umbrella', 'handbag', 'tie', 'suitcase', 'bottle', 'wine glass', 'cup', 'fork', 
+        'knife', 'spoon', 'bowl', 'banana', 'apple', 'sandwich', 'orange', 'cake', 'chair', 'couch', 'potted plant', 
+        'dining table', 'tv', 'laptop', 'mouse', 'remote', 'keyboard', 'cell phone', 'book', 'clock', 'vase', 
+        'person_front', 'person_back', 'person_right', 'person_left', 'head', 'head_front', 'head_back', 'head_right', 'head_left']
+
