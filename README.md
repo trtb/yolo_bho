@@ -84,6 +84,9 @@ Results:
 - train2017: [train2017.zip](data/train2017.zip)
 - val2017: [val2017.zip](data/val2017.zip)
 
+> **_NOTE:_**  Some of the files in train2017.zip contain a 6th value for each bbox, which is confidence score. 
+> This is not a problem for the processing chain in next step.
+
 ## Yolo for head and body orientation detection
 
 To train yolo, we recommend to use the following structure:
