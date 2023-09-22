@@ -113,3 +113,11 @@ python train.py
   --name yolo_bho 
 ```
 
+Our model: [yolo_bho.zip](data/yolo_bho.zip)
+
+| Dataset  | Set | Images | Labels | Image Size | P     | R     | mAP 0.5 | mAP 0.95 |
+|----------|-----|--------|--------|------------|-------|-------|---------|----------|
+| Coco_bho | val | 4299   | 42225  | 640x640    | 0.678 | 0.604 | 0.652   | 0.467    |
+| Coco_bho | val | 4299   | 42225  | 1280x1280  | 0.605 | 0.58  | 0.596   | 0.408    |
+
+                      
