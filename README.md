@@ -1,4 +1,4 @@
-# yolo_bho
+# Yolo Body Head Orientation (BHO)
 
 In this repository, we propose to extend the [coco dataset](https://cocodataset.org/#home) by adding head bounding box, 
 as well as body and head orientation, with 4 possible orientations: front, back, right and left.
@@ -56,7 +56,10 @@ python detect.py --weights faces_opt.pt --source coco/images/train2017/ --save-c
 python detect.py --weights faces_opt.pt --source coco/images/val2017/ --save-conf --save-txt --project homemade/coco_head --name val2017 --nosave
 ```
 
-The resulting bounding boxes are available here:
+The resulting bounding boxes are available here: TODO
+
+> **_NOTE:_**  Some of the files in train2017.zip contain a 6th value for each bbox, which is confidence score. 
+> This is not a problem for the processing chain in next step.
 
 ## Body and Head matching + orientation
 
@@ -83,9 +86,6 @@ datasets):
 Results:
 - train2017: [train2017.zip](data/train2017.zip)
 - val2017: [val2017.zip](data/val2017.zip)
-
-> **_NOTE:_**  Some of the files in train2017.zip contain a 6th value for each bbox, which is confidence score. 
-> This is not a problem for the processing chain in next step.
 
 ## Yolo for head and body orientation detection
 
